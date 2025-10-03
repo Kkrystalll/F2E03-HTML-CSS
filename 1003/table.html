@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table 練習</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 10px;
+      }
+      /* thead {
+        background-color: rgb(189, 218, 246);
+      } */
+      th {
+        background-color: rgb(189, 218, 246);
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        年齡統計表
+      </caption>
+      <colgroup>
+        <col style="background-color: #fa0" />
+        <col span="5" style="background-color: #faa" />
+        <!-- <col style="background-color: #afa" />
+        <col style="background-color: #aaf" />
+        <col style="background-color: #0fa" />
+        <col style="background-color: #00a" /> -->
+      </colgroup>
+      <thead>
+        <tr>
+          <th>性別</th>
+          <th>姓名</th>
+          <th>電話</th>
+          <th>信箱</th>
+          <th>興趣</th>
+          <th>年齡</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th rowspan="2">女</th>
+          <td>krystal</td>
+          <td>0987654321</td>
+          <td>krystal@gmail.com</td>
+          <td>躺著</td>
+          <td>18</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th rowspan="2">男</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="5">年齡平均值</th>
+          <td>18</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <table>
+      <caption>
+        會計日報表
+      </caption>
+      <colgroup>
+        <!-- <col span="3" style="background-color: rgb(189, 218, 246)" /> -->
+        <col span="4" />
+        <col style="background-color: #faa" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th rowspan="2" colspan="3">項目</th>
+          <th rowspan="2">折舊或推銷年</th>
+          <th rowspan="2">預計淨值</th>
+          <th rowspan="2">折舊或推銷方</th>
+          <th colspan="5">年度</th>
+        </tr>
+        <tr>
+          <th>年</th>
+          <th>年</th>
+          <th>年</th>
+          <th>年</th>
+          <th>年</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- 第一行 -->
+        <tr>
+          <th rowspan="3">成本</th>
+          <th rowspan="2">會計</th>
+          <th>原值</th>
+          <td>---</td>
+          <td>---</td>
+          <td>---</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <!-- 第二行 -->
+        <tr>
+          <th>帳面淨額</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <!-- 第三行 -->
+        <tr>
+          <th colspan="2">計稅</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <!-- 第四行 -->
+        <tr>
+          <th rowspan="2">折舊或攤消</th>
+          <th colspan="2">會計</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <!-- 第五行 -->
+        <tr>
+          <th colspan="2">稅法</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="6">本期納稅調整</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

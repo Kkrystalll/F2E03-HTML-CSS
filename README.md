@@ -13,4 +13,11 @@
   - 文本內容
 - vscode 打多個標籤快捷鍵 (講義 p49)
 - HTML 標頭介紹 (講義 p120~p128)
-- css 三種引入方式
+- CSS 三種引入方式
+
+## 10/03 今日進度
+- CSS reset (講義 p129~p130)
+- HTML 表格內容 (講義 p78~p91)
+- VS Code 常見快捷鍵
+- CSS class & id 選取
+- CSS class & id 命名方式 (講義 p134~p137)

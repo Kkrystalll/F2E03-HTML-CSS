@@ -1,0 +1,41 @@
+h1 {
+  color: red;
+  font-size: 60px;
+}
+
+ol{
+  margin: 20px;
+  font-size: 20px;
+}
+
+.title{
+  color: blue;
+}
+
+/* .li2{
+  color: #fa0;
+}
+
+.li4{
+  color: #fa0;
+}
+
+.li6{
+  color: #fa0;
+} */
+
+.color-yellow{
+  color: #fa0;
+}
+
+.font-30{
+  font-size: 30px;
+}
+
+.🧑‍💼{
+  font-size: 50px;
+}
+
+#li2{
+  background-color: rgb(114, 78, 192);
+}
