@@ -1,0 +1,29 @@
+section{
+  margin: 100px;
+}
+
+.login-link{
+  color: white;
+  background-color: blue;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.apple{
+  color: #626264;
+}
+
+.faq-job-container {
+  font-size: 0; /* 清空 span 空白用 */
+}
+
+.faq-job{
+  color: #626264;
+  font-size: 16px;
+}
+
+.job-hint{
+  color: #13ab67;
+  white-space: nowrap;
+  /* font-size: 16px; */
+}

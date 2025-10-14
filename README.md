@@ -1,6 +1,6 @@
 # 前端應用開發工程師實戰養成班（第 3 梯次）HTML & CSS & RWD 上課進度
 
-## 10/01 今日進度
+## 10/01 下午進度
 
 - HTML . CSS 簡介與工具安裝 (講義 p4~p22)
 - HTML 基本結構與標籤介紹 (講義 p23~p26)
@@ -16,8 +16,16 @@
 - CSS 三種引入方式
 
 ## 10/03 今日進度
+
 - CSS reset (講義 p129~p130)
 - HTML 表格內容 (講義 p78~p91)
 - VS Code 常見快捷鍵
 - CSS class & id 選取
 - CSS class & id 命名方式 (講義 p134~p137)
+
+## 10/14 上午進度
+
+- HTML 內嵌文本語義 (講義 p56~p66)
+- HTML img 標籤 (講義 p68)
+- 元素類型 inline & block (講義 p119)
+- 課表作業 code review
