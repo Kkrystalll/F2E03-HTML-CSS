@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>表單</title>
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <section>
+      <form action="#" method="post">
+        <h2>登入頁面</h2>
+        <div>
+          <progress id="file" max="100" value="90">70%</progress>
+        </div>
+        <div>
+          <label>
+            我最愛吃的食物
+            <select name="food" id="">
+              <!-- <option value="">請選擇食物</option> -->
+              <optgroup label="甜食">
+                <option value="cake">蛋糕</option>
+                <option value="pudding">布丁</option>
+                <option value="dingpu">丁布</option>
+              </optgroup>
+              <optgroup label="鹹食">
+                <option value="pie">鹹派</option>
+                <option value="pizza">pizza</option>
+              </optgroup>
+            </select>
+          </label>
+        </div>
+        <div>
+          <label>
+            我最愛吃的食物
+            <select name="food" id="">
+              <option value="" selected disabled hidden>請選擇食物</option>
+              <option value="cake">蛋糕</option>
+              <option value="pudding">布丁</option>
+              <option value="dingpu">丁布</option>
+            </select>
+          </label>
+        </div>
+        <div>
+          <label>
+            問題描述
+            <textarea name="" cols="60" rows="10"></textarea>
+          </label>
+        </div>
+        <div>
+          <label>
+            帳號
+            <input
+              type="text"
+              name="email"
+              placeholder="Pinkoi 帳號"
+              value="krystal"
+            />
+          </label>
+        </div>
+        <div>
+          <label for="passwordId">密碼</label>
+          <input
+            id="passwordId"
+            type="password"
+            name="password"
+            placeholder="Pinkoi 密碼"
+            required
+          />
+        </div>
+        <div>
+          <label>
+            年齡
+            <input
+              type="number"
+              name=""
+              id=""
+              min="10"
+              max="100"
+              step="5"
+              placeholder="請輸入年齡"
+            />
+          </label>
+        </div>
+        <div>
+          <label>
+            email
+            <input type="email" name="" id="" placeholder="請輸入電子郵件" />
+          </label>
+        </div>
+        <div>
+          <label>
+            生日
+            <input type="date" name="" id="" placeholder="請輸入日期" />
+          </label>
+        </div>
+
+        <input type="button" value="input 的 button" />
+        <input type="color" name="" id="" />
+        <div>
+          <label>
+            上傳大頭貼
+            <input type="file" name="" id="" />
+          </label>
+        </div>
+        <div>
+          <label>
+            範圍
+            <input
+              type="range"
+              name=""
+              min="0"
+              max="100"
+              value="90"
+              step="10"
+            />
+          </label>
+        </div>
+        <div>
+          <label>
+            搜尋
+            <input type="search" name="search" id="search" />
+          </label>
+        </div>
+
+        <fieldset>
+          <legend>最喜歡的國家</legend>
+          <label>
+            <input type="radio" name="country" id="" value="japan" />
+            日本
+          </label>
+          <label>
+            <input type="radio" name="country" id="" value="taiwan" checked />
+            台灣
+          </label>
+          <label>
+            <input type="radio" name="country" id="" value="america" />
+            美國
+          </label>
+          <label>
+            <input type="radio" name="country" id="" value="hongkong" />
+            香港
+          </label>
+          <label>
+            <input type="radio" name="country" id="" value="korea" />
+            韓國
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>去過的國家</legend>
+          <label>
+            <input
+              type="checkbox"
+              name="checkbox-country"
+              id=""
+              value="japan"
+              checked
+            />
+            日本
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="checkbox-country"
+              id=""
+              value="taiwan"
+            />
+            台灣
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="checkbox-country"
+              id=""
+              value="america"
+            />
+            美國
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="checkbox-country"
+              id=""
+              value="hongkong"
+            />
+            香港
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="checkbox-country"
+              id=""
+              value="korea"
+            />
+            韓國
+          </label>
+        </fieldset>
+
+        123456789
+        <input type="hidden" name="" value="hidden 的 input" />
+        123456789
+
+        <input type="image" src="../images/2358859.jpg" alt="" />
+        <input type="submit" value="input 的送出" />
+        <button type="submit" disabled>button 送出</button>
+        <button type="button">
+          button 的 type
+          <img src="../images/cat.png" alt="" />
+        </button>
+        <button type="reset">清空</button>
+      </form>
+    </section>
+  </body>
+</html>

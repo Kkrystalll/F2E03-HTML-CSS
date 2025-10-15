@@ -27,3 +27,23 @@ section{
   white-space: nowrap;
   /* font-size: 16px; */
 }
+
+.card{
+  background-color: #faa;
+  padding: 20px;
+  width: 300px;
+}
+
+.card img{
+  width: 260px;
+}
+
+.card h2{
+  font-size: 36px;
+}
+
+.card a{
+  background-color: blue;
+  color: white;
+
+}

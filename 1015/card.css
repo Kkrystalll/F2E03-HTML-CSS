@@ -1,0 +1,32 @@
+section{
+  margin: 100px;
+}
+
+.card{
+  background-color: rgb(234, 223, 200);
+  width: 300px;
+  padding: 20px;
+}
+
+.card-img{
+  width: 260px;
+}
+
+.card-title{
+  font-size: 36px;
+}
+
+.card-link{
+  background-color: blue;
+  color: white;
+}
+
+.card2{
+  background-color: rgb(234, 200, 224);
+  width: 300px;
+  /* padding: 20px; */
+}
+
+.out-20{
+  margin: 20px;
+}
