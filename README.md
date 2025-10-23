@@ -41,3 +41,10 @@
 
 ### 作業
 - Google 表單
+
+# 10/23 今日進度
+- 表單作業 code review
+- HTML 交互元素 (講義 p111~p113)
+- CSS 絕對單位. 相對單位 (講義 p131~p133)
+- CSS width. height (講義 p176)
+- CSS 容器尺寸 (講義 p178~p181)

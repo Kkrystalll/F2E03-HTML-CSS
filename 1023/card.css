@@ -1,0 +1,45 @@
+.card-container{
+  width: 1000px;
+  margin: 40px auto;
+  background-color: #aaa;
+  overflow: hidden;
+}
+
+.card{
+  width: 168px;
+  background-color: #faa;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid black;
+  float: left;
+}
+
+.card-img{
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  /* height: 126px; */
+  object-fit: cover;
+}
+
+.container2{
+  width: 980px;
+  padding: 0 10px;
+}
+
+.card2{
+  margin: 20px 10px;
+  width: 183px;
+}
+
+.card3{
+  width: 183px;
+}
+
+.card-20{
+  margin-left: 0;
+}
+
+.card-border-box{
+  box-sizing: border-box;
+  width: 210px;
+}
