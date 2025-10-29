@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>題目20 - 最終挑戰</title>
+    <link rel="stylesheet" href="style20.css">
+</head>
+<body>
+    <!-- 
+    ==========================================
+    題目要求：（這是一個複雜的綜合題目）
+    1. 所有 input 和 textarea 有淺灰色邊框
+    2. focus 時邊框變藍色
+    3. type="email" 的 input focus 時邊框變綠色
+    4. 所有外部連結（href 包含 http）要在文字後面顯示 ↗ 符號
+    
+    注意：不可修改此 HTML 檔案，只能修改 style20.css
+    ==========================================
+    -->
+    
+    <form>
+        <div>
+            <label for="name">姓名</label>
+            <input type="text" id="name">
+        </div>
+        
+        <div>
+            <label for="email">電子郵件</label>
+            <input type="email" id="email">
+        </div>
+        
+        <div>
+            <label for="phone">電話</label>
+            <input type="tel" id="phone">
+        </div>
+        
+        <div>
+            <label for="message">訊息</label>
+            <textarea id="message" rows="4"></textarea>
+        </div>
+        
+        <p>
+            參考資料：
+            <a href="https://developer.mozilla.org">MDN 文件</a>、
+            <a href="#local">本地連結</a>
+        </p>
+    </form>
+</body>
+</html>

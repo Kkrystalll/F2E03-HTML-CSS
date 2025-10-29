@@ -1,0 +1,15 @@
+/* 目前這些選取器的順序有錯誤，請調整順序 */
+
+.nav-link:active {
+    color: red;
+}
+
+.nav-link:visited {
+    color: purple;
+}
+
+.nav-link {
+    color: blue;
+    text-decoration: none;
+    margin-right: 15px;
+}

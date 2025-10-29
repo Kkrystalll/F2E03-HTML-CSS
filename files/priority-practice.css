@@ -1,0 +1,253 @@
+/* ==========================================
+   CSS 優先權計算練習題 - CSS 檔案
+   請計算每個選取器的優先權分數
+   ========================================== */
+
+/* 題目 1：基礎屬性選取器 */
+a[href] {
+    color: orange;
+}
+
+a[href^="https"] {
+    color: green;
+}
+
+.link-a {
+    color: blue !important;
+}
+
+
+
+/* 題目 2： */
+#btn-submit {
+    background-color: red;
+}
+
+.btn-primary {
+    background-color: blue !important;
+}
+
+button {
+    background-color: gray;
+}
+
+
+
+
+
+/* 題目 3：多個 class */
+.text {
+    color: black;
+}
+
+.highlight {
+    color: yellow;
+}
+
+.important {
+    color: red;
+}
+
+p.text.highlight {
+    color: green;
+}
+
+
+
+
+
+/* 題目 4：ID vs Class */
+h2 {
+    color: gray;
+}
+
+.title {
+    color: blue;
+}
+
+.header-text {
+    color: green;
+}
+
+#main-title {
+    color: red;
+}
+
+.title.header-text {
+    color: purple;
+}
+
+/* 題目 5：後代選取器組合 */
+span {
+    color: black;
+}
+
+.text {
+    color: blue;
+}
+
+p span {
+    color: green;
+}
+
+#special-paragraph .text {
+    color: red;
+}
+
+.container p span {
+    color: orange;
+}
+
+/* 題目 6：屬性選取器對決 */
+input {
+    border: 2px solid gray;
+}
+
+input[type] {
+    border-color: blue;
+}
+
+input[type="text"] {
+    border-color: green;
+}
+
+.input-field {
+    border-color: orange;
+}
+
+input[type="email"].input-field {
+    border-color: purple;
+}
+
+#pwd {
+    border-color: red;
+}
+
+/* 題目 7：偽類選取器 */
+li {
+    color: black;
+}
+
+.menu-item {
+    color: blue;
+}
+
+.menu li:first-child {
+    color: green;
+}
+
+#nav-menu .menu-item:first-child {
+    color: red;
+}
+
+ul.menu li:first-child {
+    color: orange;
+}
+
+/* 題目 8：複雜組合 */
+img {
+    border: 1px solid black;
+}
+
+.photo {
+    border: 2px solid blue;
+}
+
+img[alt] {
+    border: 2px solid green;
+}
+
+.gallery img {
+    border: 3px solid orange;
+}
+
+#cat-photo {
+    border: 2px solid red;
+}
+
+img[alt*="可愛"] {
+    border: 4px solid purple;
+}
+
+
+
+
+
+/* 題目 9：相同優先權 */
+.box {
+    background-color: lightblue;
+}
+
+.container {
+    background-color: lightgreen;
+}
+
+
+
+
+
+
+
+
+/* 題目 10：綜合大挑戰 */
+a {
+    color: gray;
+}
+
+.nav-link {
+    color: blue;
+}
+
+a[href^="https"] {
+    color: green;
+}
+
+#main-nav a {
+    color: orange;
+}
+
+.nav-link.active {
+    color: purple;
+}
+
+#main-nav .nav-link {
+    color: red;
+}
+
+/* 題目 11：萬用選取器 */
+* {
+    color: gray;
+}
+
+div span {
+    color: blue;
+}
+
+span {
+    color: green;
+}
+
+/* 題目 12：屬性值選取器對決 */
+a {
+    color: black;
+}
+
+a[href^="https"] {
+    color: blue;
+}
+
+a[href$=".html"] {
+    color: green;
+}
+
+.external-link {
+    color: red;
+}
+
+.internal-link {
+    color: orange;
+}
+
+a[href*="google"] {
+    color: purple;
+}

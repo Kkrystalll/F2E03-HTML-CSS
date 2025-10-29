@@ -1,0 +1,9 @@
+/* 目前這個選取器有錯誤，請修正 */
+a[href^=".jpg"] {
+    color: green;
+}
+
+a {
+    display: block;
+    margin: 5px 0;
+}

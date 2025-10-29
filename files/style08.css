@@ -1,0 +1,5 @@
+/* 目前這個選取器有錯誤，請修正 */
+.list li:nth-of-type-odd {
+    background-color: #f0f0f0;
+    padding: 5px;
+}

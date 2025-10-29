@@ -1,0 +1,17 @@
+.action-btn {
+    padding: 10px 20px;
+    background-color: lightblue;
+    border: 2px solid blue;
+    cursor: pointer;
+}
+
+/* 目前這兩個選取器有錯誤，請修正 */
+.action-btn :hover {
+    background-color: darkblue;
+    color: white;
+}
+
+.action-btn :focus {
+    border-color: yellow;
+    outline: none;
+}

@@ -1,0 +1,6 @@
+/* 目前這個選取器有錯誤，請修正 */
+.first-item div {
+    border: 2px solid orange;
+    padding: 5px;
+    margin: 5px;
+}

@@ -1,0 +1,22 @@
+/* 目前這些 CSS 的順序有問題，請調整順序 */
+
+.btn:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.btn.primary:hover {
+    background-color: darkblue;
+}
+
+.btn.primary {
+    background-color: blue;
+    color: white;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: lightgray;
+    cursor: pointer;
+    margin: 5px;
+}

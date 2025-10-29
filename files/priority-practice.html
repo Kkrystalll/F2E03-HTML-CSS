@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 優先權計算練習題</title>
+    <link rel="stylesheet" href="priority-practice.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .question {
+            background: #f5f5f5;
+            padding: 15px;
+            margin: 20px 0;
+            border-left: 4px solid #333;
+        }
+        .question h3 {
+            margin-top: 0;
+        }
+        code {
+            background: #e0e0e0;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        hr {
+            margin: 40px 0;
+            border: none;
+            border-top: 2px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS 優先權計算練習題</h1>
+
+    <div class="question">
+        <h2>計分規則</h2>
+        <ul>
+            <li><strong>!important</strong> = 10000</li>
+            <li><strong>inline style</strong> (行內樣式) = 1000</li>
+            <li><strong>#id</strong> = 100</li>
+            <li><strong>.class / [屬性] / :偽類</strong> = 10</li>
+            <li><strong>tag</strong> (元素) = 1</li>
+            <li><strong>*</strong> (萬用選取器) = 0</li>
+        </ul>
+        <p><strong>重要：當分數相同時，後面的規則會覆蓋前面的！</strong></p>
+    </div>
+
+    <hr>
+
+    <!-- 題目 1 -->
+    <div class="question">
+        <h3>題目 1：基礎屬性選取器</h3>
+        <p>這個連結會是什麼顏色？請計算優先權分數。</p>
+    </div>
+
+    <section>
+        <a href="https://example.com" class="link-a">連結 A</a>
+    </section>
+
+
+
+
+    <hr>
+
+    <!-- 題目 2 -->
+    <div class="question">
+        <h3>題目 2：</h3>
+        <p>這個按鈕會是什麼顏色？</p>
+    </div>
+
+    <button id="btn-submit" class="btn-primary" style="background-color: yellow;">
+        提交按鈕
+    </button>
+
+
+
+
+
+    <hr>
+
+    <!-- 題目 3 -->
+    <div class="question">
+        <h3>題目 3：多個 class</h3>
+        <p>這個段落會是什麼顏色？</p>
+    </div>
+
+    <p class="text highlight important">重要文字</p>
+
+    <hr>
+
+
+
+
+
+
+    <!-- 題目 4 -->
+    <div class="question">
+        <h3>題目 4：ID vs Class</h3>
+        <p>這個標題會是什麼顏色？</p>
+    </div>
+
+    <h2 id="main-title" class="title header-text">主要標題</h2>
+
+    <hr>
+
+
+
+
+
+
+
+    <!-- 題目 5 -->
+    <div class="question">
+        <h3>題目 5：後代選取器組合</h3>
+        <p>這個 span 會是什麼顏色？</p>
+    </div>
+
+    <div class="container">
+        <p id="special-paragraph">
+            <span class="text">特殊文字</span>
+        </p>
+    </div>
+
+
+
+
+
+    <hr>
+
+    <!-- 題目 6 -->
+    <div class="question">
+        <h3>題目 6：屬性選取器對決</h3>
+        <p>這些輸入框會是什麼邊框顏色？</p>
+    </div>
+
+    <input type="text" class="input-field" placeholder="文字輸入">
+    <input type="email" class="input-field" placeholder="Email 輸入">
+    <input type="password" id="pwd" placeholder="密碼輸入">
+
+    <hr>
+
+
+
+
+
+    <!-- 題目 7 -->
+    <div class="question">
+        <h3>題目 7：偽類選取器</h3>
+        <p>這個列表的第一項會是什麼顏色？（注意有多個規則）</p>
+    </div>
+
+    <ul class="menu" id="nav-menu">
+        <li class="menu-item">選項 1</li>
+        <li class="menu-item">選項 2</li>
+        <li class="menu-item">選項 3</li>
+    </ul>
+
+
+
+
+    <hr>
+
+    <!-- 題目 8 -->
+    <div class="question">
+        <h3>題目 8：複雜組合</h3>
+        <p>這個圖片會有什麼邊框？</p>
+    </div>
+
+    <div class="gallery">
+        <img src="photo.jpg" alt="可愛貓咪" class="photo" id="cat-photo">
+    </div>
+
+
+
+
+
+
+
+
+    <hr>
+
+    <!-- 題目 9 -->
+    <div class="question">
+        <h3>題目 9：相同優先權</h3>
+        <p>這個 div 會是什麼背景顏色？（提示：優先權相同時...）</p>
+    </div>
+
+    <div class="box container">內容區塊</div>
+
+    <hr>
+
+
+
+
+
+
+
+    <!-- 題目 10 -->
+    <div class="question">
+        <h3>題目 10：綜合大挑戰</h3>
+        <p>這個連結會是什麼顏色？請計算所有規則的優先權。</p>
+    </div>
+
+    <nav id="main-nav">
+        <a href="https://example.com" class="nav-link active" style="color: pink;">
+            首頁連結
+        </a>
+    </nav>
+
+    <hr>
+
+    <!-- 題目 11 -->
+    <div class="question">
+        <h3>題目 11：萬用選取器</h3>
+        <p>這個 span 會是什麼顏色？</p>
+    </div>
+
+    <div>
+        <span>普通文字</span>
+    </div>
+
+    <hr>
+
+    <!-- 題目 12 -->
+    <div class="question">
+        <h3>題目 12：屬性值選取器對決</h3>
+        <p>下面三個連結分別是什麼顏色？</p>
+    </div>
+
+    <a href="https://google.com" class="external-link">Google</a>
+    <a href="page.html" class="internal-link">內部頁面</a>
+    <a href="https://github.com">GitHub</a>
+
+    <hr>
+
+
+
+
+    
+
+    <div class="question">
+        <h2>📝 答題區</h2>
+        <p>請在紙上或文件中寫下每個題目的答案，包括：</p>
+        <ol>
+            <li>元素最終顯示的顏色/樣式</li>
+            <li>每個相關 CSS 規則的優先權分數</li>
+            <li>哪個規則最終生效（最高分或最後面）</li>
+        </ol>
+        <p>完成後可以對照 <code>priority-answers.md</code> 檢查答案！</p>
+    </div>
+
+</body>
+</html>

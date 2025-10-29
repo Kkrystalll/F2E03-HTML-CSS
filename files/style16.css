@@ -1,0 +1,8 @@
+/* 目前這兩個選取器有錯誤，請修正 */
+article p:first-child {
+    font-weight: bold;
+}
+
+article p:not:first-of-type {
+    color: gray;
+}

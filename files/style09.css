@@ -1,0 +1,5 @@
+/* 目前這個選取器有錯誤，請修正 */
+.wrapper p:nth-child(3n+1) {
+    background-color: lightblue;
+    padding: 5px;
+}

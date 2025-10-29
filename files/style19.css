@@ -1,0 +1,28 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* 目前這些選取器有錯誤，請修正 */
+
+/* 這會選到所有偶數行，包括可能的表頭 */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* 這會影響到表頭 */
+tr:hover {
+    background-color: lightyellow;
+}
+
+/* 表頭樣式 */
+tr:first-child {
+    background-color: #333;
+    color: white;
+}

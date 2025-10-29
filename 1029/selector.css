@@ -1,0 +1,177 @@
+section {
+  margin: 100px;
+  /* background-color: #e1dfcf; */
+}
+
+a{
+  background-color: #aaf;
+  padding: 20px;
+}
+
+a:visited{
+  color: red;
+}
+
+a:focus{
+  background-color: #ffa;
+}
+
+a:hover{
+  background-color: #afa;
+}
+
+a:active{
+  background-color: rgb(170, 245, 255);
+}
+
+
+li:last-of-type a:last-child{
+  color: rgb(0, 213, 255);
+}
+
+.nth-list .nth-item:nth-child(odd) a{
+  color: red;
+}
+
+.nth-list .nth-item:not(:nth-child(3)){
+  background-color: #faa;
+}
+
+/* .box p:first-child{
+  background-color: #cbb61a;
+} */
+
+/* div:first-child{
+  border: 1px solid rgb(38, 28, 99);
+} */
+
+/* p:first-child{
+  background-color: #faa;
+} */
+
+/* p:first-of-type{
+  background-color: #faa;
+} */
+
+/* .box :first-child{
+  background-color: #cb581a;
+} */
+
+.box :first-of-type{
+  background-color: #cbb61a;
+}
+
+/* .aaaa{
+  background-color: #faf;
+} */
+
+p:first-child{
+  text-indent: 32px;
+}
+
+/* 11 */
+/* a[href]{
+  color: orange;
+} */
+
+/* 11 */
+/* a[href^="https"]{
+  color: green;
+} */
+
+/* 10 */
+/* .linka{
+  color: blue;
+} */
+
+input[type="text"], input[type="password"]{
+  border-radius: 4px;
+  border: 1px solid#faa;
+}
+
+/* .first-item div {
+  color: green;
+} */
+
+
+.first-item > div {
+  color: blue;
+}
+
+/* .first-item-border div {
+  border: 2px solid blue;
+} */
+
+.first-item-border > div {
+  border: 2px solid blue;
+}
+
+.item{
+  border-top: 1px solid #faa;
+}
+
+.item:first-child{
+  border-top: none;
+}
+
+/* .item + .item{
+  border-top: 1px solid #faa;
+} */
+
+/* .border-none{
+  border: none;
+} */
+
+/* class 選取 */
+/* .box1{
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+}
+
+.box2{
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+} */
+
+/* id 選取 */
+/* #box-id-1{
+  width: 100px;
+  height: 100px;
+  background-color: rgb(173, 230, 191);
+} */
+
+/* 群組 */
+/* .box1, .box2{
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+} */
+
+div#box-id-1 {
+  width: 100px;
+  height: 100px;
+}
+
+.news-list li a{
+  border: 1px solid red;
+}
+
+/* .news-list .news-list-item{
+  border: 1px solid red;
+} */
+
+.news .card{
+  background-color: lightgreen;
+  width: 200px;
+  height: 200px;
+}
+
+/* h1 + p {
+  color: blue;
+} */
+
+h1 ~ p {
+  color: rgb(255, 0, 140);
+}

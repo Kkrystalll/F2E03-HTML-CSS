@@ -1,0 +1,37 @@
+/* 目前這些選取器有多處錯誤，請全部修正 */
+
+/* 錯誤：缺少逗號 */
+input textarea {
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* 錯誤：有空格 */
+input :focus,
+textarea :focus {
+    border-color: blue;
+    outline: none;
+}
+
+/* 錯誤：屬性值缺少引號 */
+input[type=email]:focus {
+    border-color: green;
+}
+
+/* 錯誤：應該用 ^= (開頭) 而不是 *= (包含) */
+a[href*="http"]::after {
+    content: " ↗";
+    font-size: 0.8em;
+}
+
+div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,6 @@
+/* 目前只設定了第 2 個，請補上第 3 個 */
+.gallery > div:nth-child(2) {
+    background-color: lightblue;
+    padding: 10px;
+    margin: 5px 0;
+}

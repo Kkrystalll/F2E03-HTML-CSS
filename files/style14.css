@@ -1,0 +1,8 @@
+/* 目前這個選取器有錯誤，請修正 */
+img[alt="可愛"] {
+    border: 3px solid red;
+}
+
+img {
+    margin: 5px;
+}

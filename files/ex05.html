@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>題目05 - 子代選取器 ></title>
+    <link rel="stylesheet" href="style05.css">
+</head>
+<body>
+    <!-- 
+    ==========================================
+    題目要求：
+    只讓 .first-item 的直接子元素 div 有橘色邊框
+    (.second-item 裡面的 div 不應該被選到)
+    
+    注意：不可修改此 HTML 檔案，只能修改 style05.css
+    ==========================================
+    -->
+    
+    <div class="first-item">
+        first-item
+        <div>第一層 div (應該有橘色邊框)</div>
+        <div class="second-item">
+            second-item
+            <div>第二層 div (不應該有橘色邊框)</div>
+        </div>
+    </div>
+</body>
+</html>
