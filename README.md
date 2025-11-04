@@ -57,5 +57,11 @@
 - CSS 選取器遊戲
 - files/ex01.html~ex20.html
 
+## 10/29 今日進度
+- CSS 屬性兼容 (講義 p158)
+- CSS 文字.背景 (講義 p159~p157)
+- CSS Float (講義 p182~p183)
 
+### 練習
+- float 練習
 

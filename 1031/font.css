@@ -1,0 +1,86 @@
+header{
+  background-color: #aaa;
+}
+
+nav{
+  /* margin: 0 auto;
+  width: 300px;
+  background-color: #faf;*/
+  direction: rtl;
+}
+
+nav a {
+  /* padding: 20px 10px; */
+  background-color: #faa;
+  line-height: 64px;
+  display: inline-block;
+}
+
+section{
+  margin: 100px;
+}
+
+
+
+ul li{
+  background-color: #faf;
+  text-indent: -10px;
+}
+
+h1{
+  font-size: 64px;
+  /* font-weight: normal; */
+  font-weight: bold;
+  /* text-decoration: underline dotted red; */
+  /* text-decoration: green wavy underline; */
+  /* text-decoration-line: underline; */
+  /* text-decoration-color: green; */
+  /* text-decoration-style: wavy; */
+  text-decoration: line-through red wavy;
+}
+
+p {
+  background-color: #f0fabd;
+  line-height: 30px;
+  /* letter-spacing: 20px; */
+  /* word-spacing: 40px; */
+}
+
+.bg-img{
+  height: 600px;
+  /* background-image: url(../images/kumamon.webp), linear-gradient(to right bottom, rgb(30, 0, 255), green);
+  background-repeat: no-repeat; */
+
+
+  /* background-color: #afa; */
+  background-image: url(../images/kumamon.webp), url(../images/cat.png), linear-gradient(to right bottom, rgb(30, 0, 255), green);
+  background-repeat: no-repeat;
+  background-size: 100px 100px, 300px 200px, cover;
+  background-position: 20px center, bottom 40px right 100px, 0 0;
+
+  /* background: url(../images/kumamon.webp) no-repeat 20px center / 100px 100px, url(../images/cat.png) no-repeat bottom 40px right 100px / 300px 200px, #afa; */
+}
+
+.justify{
+  /* width: 300px; */
+  /* text-align: justify; */
+  /* letter-spacing: 20px; */
+  /* word-spacing: 40px; */
+  direction: rtl;
+}
+
+.iansui-regular {
+  font-family: "Bitcount Grid Single", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.bg-img-p{
+  background-color: #afa;
+  height: 600px;
+  background-image: url(../images/kumamon.webp), url(../images/cat.png);
+  background-repeat: no-repeat;
+  background-position: 20px center, bottom 40px right 100px;
+  background-size: 100px 100px, 300px 200px;
+}

@@ -1,0 +1,62 @@
+section{
+  margin: 100px;
+}
+
+.float-img{
+  width: 400px;
+  float: left;
+  margin-right: 40px;
+}
+
+.float-text{
+  /* background-color: #ffa; */
+}
+
+.float-card{
+  padding: 20px;
+  background-color: rgb(159, 221, 200);
+}
+
+.float-card:nth-child(even){
+  background-color: bisque;
+}
+
+.float-card:nth-child(even) .float-img{
+  float: right;
+  margin-right: 0;
+  margin-left: 40px;
+}
+
+.float-card:nth-child(even) .float-content{
+  direction: rtl;
+}
+
+.clear{
+  clear: both;
+}
+
+.float-title{
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.post{
+  width: 600px;
+  margin: 0 auto;
+  background-color: rgb(163, 196, 185);
+  padding: 20px;
+  text-align: justify;
+}
+
+.post-img-1{
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.post-img-2{
+  float: right;
+  width: 180px;
+  margin: 20px 0 20px 20px;
+}
+
