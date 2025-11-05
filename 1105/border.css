@@ -1,0 +1,69 @@
+section{
+  margin: 100px;
+}
+
+h1{
+  text-align: center;
+  font-size: 40px;
+  border-bottom-width: 4px;
+  border-bottom-color: #f00;
+  border-bottom-style: solid;
+  margin-bottom: 20px;
+}
+
+.box{
+  width: 300px;
+  height: 300px;
+  background-color: #faf;
+  /* border-top-width: 6px;
+  border-right-width: 10px;
+  border-bottom-width: 20px;
+  border-left-width: 8px;
+  border-width: 6px 10px;
+  border-top-color: #f00;
+  border-right-color: #0f0;
+  border-bottom-color: #00f;
+  border-left-color: #fa0; */
+  /* border-style: solid; */
+  /* border: 10px solid #f00; */
+  /* border-radius: 10px 20px 30px 80px; */
+  border: 10px solid #f00;
+  outline: 8px solid #aaa;
+  outline-offset: 20px;
+}
+
+.box1{
+  /* border: 10px solid #f00; */
+}
+
+.box2{
+  /* outline: 8px solid #aaa; */
+  /* outline-offset: 20px; */
+}
+
+.name-field{
+  /* 1. */
+  outline: 2px solid #aaa;
+  /* 2. */
+  /* border: 2px solid #aaa; */
+  border-radius: 4px;
+}
+
+.name-field:focus{
+  /* border: none; */
+  /* 1. */
+  outline: 2px solid #da1a1a;
+
+  /* 2. */
+  /* border: 2px solid #da1a1a;
+  outline: none; */
+}
+
+.list{
+  /* list-style-image: url(../images/kumamon.webp); */
+  /* margin-left: 100px; */
+  /* list-style-position: inside;
+  list-style-type: "-"; */
+  /* list-style-type: none; */
+  list-style: "-" inside ;
+}

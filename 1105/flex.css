@@ -1,0 +1,43 @@
+section{
+  margin: 100px;
+}
+
+.box-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(189, 237, 189);
+  /* gap: 20px; */
+  /* column-gap: 30px;
+  row-gap: 10px; */
+  /* flex-direction: row-reverse; */
+  justify-content: space-around;
+}
+
+.box{
+  width: 300px;
+}
+
+.box1{
+  background-color: #faf;
+}
+
+.box2{
+  background-color: #fa0;
+}
+
+.box3{
+  background-color: #aaf;
+}
+
+.container{
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+
+.card{
+  height: 200px;
+  background-color: #fa0;
+  width: 100%;
+}

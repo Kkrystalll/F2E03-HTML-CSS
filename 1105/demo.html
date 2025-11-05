@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>產品列表 - inline-block 切版</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: white;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #333;
+      }
+
+      /* 關鍵：清除 inline-block 元素間的空白 */
+      .product-list {
+        font-size: 0; /* 移除 inline-block 之間的空白 */
+        text-align: center; /* 讓卡片置中 */
+      }
+
+      .product-card {
+        display: inline-block; /* 核心屬性 */
+        width: 280px;
+        margin: 10px;
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        vertical-align: top; /* 對齊頂部，避免高度不同時錯位 */
+        font-size: 16px; /* 恢復字體大小 */
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .product-image {
+        width: 100%;
+        height: 200px;
+        background-color: #e0e0e0;
+        display: block; /* 移除圖片下方的空白 */
+      }
+
+      .product-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .product-info {
+        padding: 15px;
+      }
+
+      .product-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      .product-description {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 15px;
+        line-height: 1.5;
+      }
+
+      .product-price {
+        font-size: 20px;
+        color: #e74c3c;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+
+      .product-button {
+        display: inline-block; /* 按鈕也用 inline-block */
+        width: 100%;
+        padding: 10px;
+        background-color: #3498db;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+
+      .product-button:hover {
+        background-color: #2980b9;
+      }
+
+      /* 導航列示範 */
+      .nav {
+        background-color: #333;
+        padding: 15px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 0; /* 移除 inline-block 間空白 */
+      }
+
+      .nav-item {
+        display: inline-block;
+        padding: 10px 20px;
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        transition: background-color 0.3s;
+      }
+
+      .nav-item:hover {
+        background-color: #555;
+      }
+
+      /* 標籤示範 */
+      .tags {
+        margin-top: 10px;
+        font-size: 0;
+      }
+
+      .tag {
+        display: inline-block;
+        padding: 5px 10px;
+        background-color: #ecf0f1;
+        color: #555;
+        font-size: 12px;
+        border-radius: 3px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 導航列 (inline-block 應用) -->
+    <nav class="nav">
+      <a href="#" class="nav-item">首頁</a>
+      <a href="#" class="nav-item">商品分類</a>
+      <a href="#" class="nav-item">關於我們</a>
+      <a href="#" class="nav-item">聯絡我們</a>
+    </nav>
+
+    <div class="container">
+      <h1>熱門商品</h1>
+
+      <!-- 產品列表 (inline-block 應用) -->
+      <div class="product-list">
+        <!-- 產品卡片 1 -->
+        <div class="product-card">
+          <div class="product-image" style="background-color: #3498db"></div>
+          <div class="product-info">
+            <div class="product-title">經典藍牙耳機</div>
+            <div class="product-description">
+              高音質無線藍牙耳機，續航力長達 24 小時
+            </div>
+            <div class="product-price">NT$ 1,299</div>
+            <div class="tags">
+              <span class="tag">熱銷</span>
+              <span class="tag">新品</span>
+            </div>
+            <a href="#" class="product-button">加入購物車</a>
+          </div>
+        </div>
+
+        <!-- 產品卡片 2 -->
+        <div class="product-card">
+          <div class="product-image" style="background-color: #e74c3c"></div>
+          <div class="product-info">
+            <div class="product-title">智慧手錶</div>
+            <div class="product-description">
+              多功能運動手錶，支援心率監測與 GPS 定位
+            </div>
+            <div class="product-price">NT$ 2,499</div>
+            <div class="tags">
+              <span class="tag">限時優惠</span>
+            </div>
+            <a href="#" class="product-button">加入購物車</a>
+          </div>
+        </div>
+
+        <!-- 產品卡片 3 -->
+        <div class="product-card">
+          <div class="product-image" style="background-color: #2ecc71"></div>
+          <div class="product-info">
+            <div class="product-title">無線充電盤</div>
+            <div class="product-description">
+              快速充電，支援多種設備，輕巧便攜設計
+            </div>
+            <div class="product-price">NT$ 599</div>
+            <div class="tags">
+              <span class="tag">推薦</span>
+              <span class="tag">環保</span>
+            </div>
+            <a href="#" class="product-button">加入購物車</a>
+          </div>
+        </div>
+
+        <!-- 產品卡片 4 -->
+        <div class="product-card">
+          <div class="product-image" style="background-color: #f39c12"></div>
+          <div class="product-info">
+            <div class="product-title">機械式鍵盤</div>
+            <div class="product-description">
+              青軸手感，RGB 背光，專為遊戲玩家設計
+            </div>
+            <div class="product-price">NT$ 3,299</div>
+            <div class="tags">
+              <span class="tag">電競專用</span>
+            </div>
+            <a href="#" class="product-button">加入購物車</a>
+          </div>
+        </div>
+
+        <!-- 產品卡片 5 -->
+        <div class="product-card">
+          <div class="product-image" style="background-color: #9b59b6"></div>
+          <div class="product-info">
+            <div class="product-title">行動電源</div>
+            <div class="product-description">
+              20000mAh 大容量，快充技術，輕薄好攜帶
+            </div>
+            <div class="product-price">NT$ 899</div>
+            <div class="tags">
+              <span class="tag">必備</span>
+            </div>
+            <a href="#" class="product-button">加入購物車</a>
+          </div>
+        </div>
+
+        <!-- 產品卡片 6 -->
+        <div class="product-card">
+          <div class="product-image" style="background-color: #1abc9c"></div>
+          <div class="product-info">
+            <div class="product-title">筆記型電腦支架</div>
+            <div class="product-description">
+              鋁合金材質，可調節角度，散熱效果佳
+            </div>
+            <div class="product-price">NT$ 799</div>
+            <div class="tags">
+              <span class="tag">辦公必備</span>
+            </div>
+            <a href="#" class="product-button">加入購物車</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
