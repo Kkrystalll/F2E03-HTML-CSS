@@ -74,6 +74,7 @@
 - float 練習
 
 ## 11/05 今日進度
+
 - float 練習解說
 - CSS 邊框.外框 (講義 p168~p173)
 - CSS Display (講義 p184~p188)
@@ -81,3 +82,14 @@
 ### 回家作業
 
 - [inline](https://inline.app/zh/) 11/14 交
+
+## 11/07 今日進度
+
+- CSS 最大最小寬高 (講義 p176)
+- CSS Display flex (講義 p188~p191)
+- CDN Font Awesome
+
+### 練習
+
+- [flex 青蛙遊戲](https://flexboxfroggy.com)
+- [104 適合你的好公司](https://www.104.com.tw/)
