@@ -1,0 +1,48 @@
+.list{
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #aaa;
+  /* display: flex;
+  flex-wrap: wrap; */
+  font-size: 0;
+}
+
+.list li{
+  width: 100px;
+  height: 100px;
+  background-color: #aaf;
+  margin: 10px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 100px;
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+}
+
+.list .item12{
+  background-color: blue;
+  position: relative;
+  /* top: -50px; */
+  bottom: 50px;
+  left: 100px;
+  /* right: -50px; */
+  /* opacity: 0.5; */
+  z-index: 9;
+}
+
+.list .item13{
+  background-color: red;
+  position: relative;
+  /* top: -50px; */
+  bottom: 50px;
+  left: 50px;
+  /* right: -50px; */
+  opacity: 0.5;
+  z-index: 9;
+}
+
+.list .item14{
+  position: relative;
+  /* z-index: -1; */
+}

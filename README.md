@@ -93,3 +93,9 @@
 
 - [flex 青蛙遊戲](https://flexboxfroggy.com)
 - [104 適合你的好公司](https://www.104.com.tw/)
+
+## 11/12 今日進度
+
+- CSS 其他常用 (講義 p174~p175)
+- CSS flex 104 卡片練習
+- CSS position relative & absolute (講義 p192~p194)

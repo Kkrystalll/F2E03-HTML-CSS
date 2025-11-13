@@ -1,0 +1,74 @@
+section{
+  margin: 100px;
+}
+
+.card{
+  background-color: #aaf;
+  width: 300px;
+  position: relative;
+}
+
+.card-img{
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-content{
+  padding: 10px;
+}
+
+.sale{
+  position: absolute;
+  background-color: red;
+  color: white;
+  top: 20px;
+  left: -10px;
+}
+
+.discount{
+  position: absolute;
+  background-color: #aaa;
+  top: 0;
+  right: 0;
+}
+
+.line-wrap{
+  margin: 50px;
+}
+
+.line{
+  border: 4px solid blue;
+  padding: 100px;
+}
+
+.inner{
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+
+.outer{
+  position: relative;
+}
+
+.middle{
+  /* position: relative; */
+}
+
+.post{
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #aaa;
+  position: relative;
+}
+
+.box{
+  width: 300px;
+  height: 300px;
+  background-color: #ffa;
+  position: absolute;
+  opacity: 0.6;
+  right: 0;
+  top: 0;
+}
