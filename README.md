@@ -99,3 +99,10 @@
 - CSS 其他常用 (講義 p174~p175)
 - CSS flex 104 卡片練習
 - CSS position relative & absolute (講義 p192~p194)
+
+## 11/14 今日進度
+
+- CSS position fixed & sticky (講義 p192~p194)
+- CSS transform (講義 p195~p196)
+- CSS 三角形 (講義 p199)
+- CSS 偽元素 (講義 p198~p200)

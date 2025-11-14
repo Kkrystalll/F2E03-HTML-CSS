@@ -1,0 +1,24 @@
+header{
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #aaa;
+  z-index: 2;
+}
+
+main{
+  margin-top: 64px;
+}
+
+nav{
+  background-color: #faa;
+  padding: 10px;
+  position: sticky;
+  top: 64px;
+}
+
+.secion2{
+  background-color: #aaf;
+}
