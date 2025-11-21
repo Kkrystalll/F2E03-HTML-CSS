@@ -1,0 +1,60 @@
+section{
+  max-width: 960px;
+  margin: 100px auto;
+  background-color: #bcddee;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.card{
+  background-color: #aaf;
+  width: calc(25% - 15px);
+  position: relative;
+}
+
+.card-img{
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-content{
+  padding: 10px;
+}
+
+.sale{
+  position: absolute;
+  background-color: red;
+  color: white;
+  top: 20px;
+  left: -10px;
+  z-index: 2;
+}
+
+.sale::before{
+  content: "";
+  position: absolute;
+  /* bottom: -10px; */
+  top: 100%;
+  border-right: 10px solid rgb(165, 11, 11);
+  border-top: none;
+  border-bottom: 10px solid transparent;
+  border-left: none;
+}
+
+.img-wrap{
+  overflow: hidden;
+  position: relative;
+}
+
+.hot::after{
+  content: "HOT";
+  position: absolute;
+  padding: 2px 20px;
+  background-color: #eded92;
+  top: 10px;
+  right: -10px;
+  transform: rotate(45deg);
+}

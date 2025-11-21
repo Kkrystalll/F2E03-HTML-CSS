@@ -106,3 +106,13 @@
 - CSS transform (講義 p195~p196)
 - CSS 三角形 (講義 p199)
 - CSS 偽元素 (講義 p198~p200)
+
+## 11/19 今日進度
+
+- CSS transition (講義 p201~p204)
+- CSS grid (講義 p211~p220)
+- CSS position static
+
+### 回家作業
+
+- [易遊網 (焦點話題、日本跟團、寶島必玩)](https://www.eztravel.com.tw/) 11/26 交
