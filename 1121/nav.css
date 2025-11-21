@@ -1,0 +1,89 @@
+header{
+  background-color: #9B73A9;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo{
+  height: 80px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.nav-menu{
+  display: flex;
+  gap: 20px;
+  color: white;
+}
+
+.nav-item{
+  background-color: #7B498D;
+  line-height: 80px;
+  padding: 0 20px;
+  position: relative;
+}
+
+.nav-item:hover .second-menu{
+  display: block;
+}
+
+.avatar{
+  width: 80px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.second-menu{
+  display: none;
+  position: absolute;
+  left: 10px;
+  top: calc(100% + 10px);
+  background-color: #7B498D;
+}
+
+.second-item{
+  line-height: 1.5;
+  padding: 10px 30px;
+  text-wrap: nowrap;
+  position: relative;
+}
+
+.second-menu::before{
+  content: "";
+  position: absolute;
+  top: -10px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #7B498D;
+}
+
+.second-menu::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  left: -10px;
+  top: -10px;
+}
+
+.second-item:hover, .third-item:hover{
+  background-color: #5E2971;
+}
+
+.second-item:hover .third-menu{
+  display: block;
+}
+
+.third-menu{
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 20px;
+  background-color: #7B498D;
+}
+
+.third-item{
+  line-height: 1.5;
+  padding: 10px 30px;
+  text-wrap: nowrap;
+}
