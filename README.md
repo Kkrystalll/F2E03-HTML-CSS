@@ -124,8 +124,15 @@
 - nav 選單切版
 - RWD 漢堡選單(1)
 
-## 11/21 今日進度
+## 11/26 今日進度
 
 - 易遊網作業 code review
 - RWD 漢堡選單(2)
 - RWD 手切格線
+
+## 11/28 今日進度
+
+- HTML a 錨點
+- Bootstrap
+- Tailwind
+- CSS animation

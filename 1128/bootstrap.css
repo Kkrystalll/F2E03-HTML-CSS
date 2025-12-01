@@ -1,0 +1,43 @@
+section{
+  margin: 100px auto;
+  background-color: #aaa;
+  max-width: 1200px;
+}
+
+.accordion-container{
+  display: flex;
+  gap: 20px;
+}
+
+.card-list{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card-img-top{
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card-body{
+  display: flex;
+  flex-direction: column;
+}
+
+.btn{
+  align-self: end;
+}
+
+@media (max-width: 1023px){
+  .card-list{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 767px){
+  .card-list{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

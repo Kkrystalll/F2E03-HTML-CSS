@@ -1,4 +1,8 @@
-
+article{
+  max-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
 
 header{
   background-color: #9B73A9;
